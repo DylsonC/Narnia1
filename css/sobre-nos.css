@@ -1,0 +1,17 @@
+.envolver-iframe{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+}
+h1{
+    color: var(--cor-texto2);
+    padding: 1rem;
+}
+iframe{
+    border-radius: 5px;
+}

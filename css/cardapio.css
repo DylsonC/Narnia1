@@ -1,0 +1,369 @@
+:root{
+    --cor-fundo1: #404040;
+    --cor-fundo2: #191919;
+    --cor-fundo3: #202020;
+    --cor-line: #7A7A7A;
+    --cor-texto1: #F0992B;
+    --cor-texto2: #FFE8D0;
+    --cor-texto3: #fff;
+    --cor-texto4: #DFB57A;
+    --fonte-texto1: 'Inter',Sans-Serif;
+    --fonte-texto2: 'Sacramento', Sans-Serif;
+    --fonte-texto3: 'Jost', Sans-Serif;
+    --fonte-texto4: 'Josefin Sans', Sans-Serif;
+    --fonte-texto5: 'Roboto', Sans-Serif;
+}
+.conteudo{
+    width: 100%;
+}
+.pesquisaProduto{
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    top: 80px;
+}
+.fundoPesquisa{
+    background: url("../imagens/fundoCardapio3.jpeg");
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(30%);
+}
+.containerPesquisa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vh;
+    height: 100%;
+    width: 100%;
+}
+.containerPesquisa h1{
+    color: var(--cor-texto4);
+    font-size: 3rem;
+    font-family: var(--fonte-texto3);
+}
+.pesquisaComida{
+    width: 80%;
+    border-radius: 8px;
+    border: 1px solid var(--cor-texto1);
+    padding: 10px 0;
+    background: transparent;
+    text-align: center;
+    transition: .5s;
+    color: var(--cor-texto2);
+}
+.pesquisaComida:focus{
+    transform: scale(1.1);
+    border-color: var(--cor-texto4);
+}
+.navCardapio{
+    width: 100%;
+    position: relative;
+    top: 80px;
+    display: flex;
+}
+.containerBuscar{
+    width: 20%;
+    position: relative;
+    background: var(--cor-fundo2);
+    border-radius: 5px;
+}
+.tituloBusca{
+    color: var(--cor-texto2);
+    font-family: var(--fonte-texto3);
+    padding: 1rem;
+}
+.navComida{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+}
+.navComida label{
+    color: var(--cor-texto4);
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+.navComida label:hover{
+    background: var(--cor-texto2);
+    color: var(--cor-line);
+}
+.navComida label, .navComida input{
+    cursor: pointer;
+}
+.navComida input{
+    appearance: none;
+    border: 1px solid var(--cor-texto1);
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+}
+.navComida input:checked{
+    background: var(--cor-texto1);
+}
+.envolverProdutos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerProduto{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+.comida{
+    border: 1px solid var(--cor-texto1);
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 29px #000;
+}
+.cartaz-comida{
+    width: 100%;
+    height: 85%;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(70%);
+}
+.img-comida{
+    width: 100%;
+    height: 100%;
+}
+.textoComida{
+    text-align: center;
+    color: var(--cor-texto2);
+    background: linear-gradient(to top, #000, transparent);
+    position: relative;
+    height: auto;
+    font-size: 1.8rem;
+    font-family: var(--fonte-texto2);
+    font-weight: 900;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pedirComida{
+    border: none;
+    border-top: 1px solid var(--cor-texto1);
+    background: var(--cor-fundo2);
+    height: 15vh;
+    color: var(--cor-texto3);
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-family: var(--fonte-texto5);
+    font-weight: 900;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pedirComida::before{
+    content: "";
+    position: absolute;
+    background: var(--cor-texto1);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 20vh;
+    z-index: -1;
+    transition: .5s;
+}
+.pedirComida:hover::before{
+    top: 0;
+}
+.descricaoComida{
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    background: var(--cor-fundo2);
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    left: 200vw;
+    transition: .5s;
+}
+.envolverCartaz{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.envolverCartaz:hover > .descricaoComida{
+    left: 0;
+}
+.img-descricao{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(20%);
+    bottom: 0;
+}
+.tituloDiscricao{
+    font-family: var(--fonte-texto2);
+    color: var(--cor-texto4);
+    text-align: center;
+    font-weight: 200;
+    font-size: 1,5rem;
+}
+.descricaoComida p{
+    color: var(--cor-texto2);
+    width: 90%;
+    font-family: var(--fonte-texto5);
+    text-align: center;
+    line-height: 1.5rem;
+    text-shadow: 1px 1px 1px var(--cor-fundo2);
+}
+.containerFooter{
+    position: relative;
+    top: 12vh;
+}
+#hambuguers:checked > #hambuguer{
+    display: none;
+}
+.valor{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.compra{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 5px;
+    background: var(--cor-line);
+    position: relative;
+}
+.compra label{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: var(--cor-texto3);
+    font-size: min(18px, 5vw);
+}
+#quantidade{
+    width: 50%;
+    border-radius: 5px;
+    border: 1px solid var(--cor-texto2);
+    height: 3vh;
+    text-align: center;
+    background: var(--cor-texto3);
+}
+.compra p{
+    font-size: min(20px, 5vw);
+    font-weight: 700;
+    color: var(--cor-texto3);
+}
+.closed{
+    position: absolute;
+    right: 2vw;
+    color: var(--cor-texto3);
+    top: 2vh;
+    font-size: min(28px, 5vw);
+    cursor: pointer;
+}
+.wrapper-valor{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+}
+.container-compra{
+    position: fixed;
+    top: 100px;
+    border-radius: 5px;
+    z-index: 100;
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+#nome-da-comida{
+    font-size: min(28px, 5vw);
+    color: var(--cor-texto3);
+}
+#img-da-comida{
+    width: 90%;
+    height: 40vh;
+}
+.btn-pedir{
+    background: var(--cor-texto1);
+    color: var(--cor-texto3);
+    border-radius: 5px;
+    border: 1px solid var(--cor-texto3);
+    width: 50%;
+    height: 5vh;
+    font-size: min(16px, 3vw);
+    font-weight: 700;
+    cursor: pointer;
+    transition: .5s;
+}
+.btn-pedir:hover{
+    background: var(--cor-texto3);
+    color: var(--cor-texto1);
+    border: 1px solid var(--cor-texto1);
+}
+@media(max-width: 768px){
+    .fundoPesquisa{
+        background: url("../imagens/fundoCardapio3.jpeg");
+        background-position: center;
+    }
+    .navCardapio{
+        flex-direction: column;
+    }
+    .containerBuscar{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .navComida{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}

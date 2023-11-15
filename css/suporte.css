@@ -1,0 +1,125 @@
+@import url(../css/main.css);
+.banner-suporte{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    background: url("https://iamit.com.br/wp-content/uploads/2020/08/Suporte-tecnico-em-TI.jpg");
+    background-position: center;
+    background-size: cover;
+    filter: brightness(40%);
+}
+.tituloSuporte{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: min(60px, 10vw);
+}
+.container-content{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 50vh;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--cor-texto3);
+    gap: 5vh;
+    padding: 2rem;
+}
+.campoNomeEmail{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.containerInput{
+    padding: 0 1rem;
+    width: 100%;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    text-align: center;
+}
+#campoTexto{
+    resize: none;
+    color: var(--cor-texto3);
+    background: var(--cor-fundo2);
+    border-radius: 5px;
+    border: 1px solid var(--cor-texto3);
+}
+#campoTexto:focus{
+    border: 1px solid var(--cor-texto1);
+}
+.destaque{
+    color: red;
+}
+.campoNomeEmail input{
+    border-radius: 5px;
+    border: 1px solid var(--cor-texto3);
+    background: var(--cor-fundo2);
+    width: 100%;
+    height: 5vh;
+    color: var(--cor-texto3);
+    text-align: center;
+}
+.campoNomeEmail input:focus{
+    border: 1px solid var(--cor-texto1);
+}
+.btn-submit{
+    border: none;
+    background: var(--cor-texto1);
+    border-radius: 5px;
+    position: relative;
+    width: 90%;
+    padding: 1em;
+    cursor: pointer;
+    transition: .5s;
+    color: var(--cor-texto3);
+    font-size: min(16px, 5vw);
+    font-weight: 700;
+}
+.btn-submit:hover{
+    background: var(--cor-texto3);
+    color: var(--cor-texto1);
+}
+.link-jogo{
+    color: var(--cor-texto3);
+    border-bottom: 1px solid var(--cor-texto3);
+    font-size: min(18px, 5vw);
+}
+.link-jogo:hover{
+    color: var(--cor-texto1);
+}
+.containerFooter{
+    top: 50vh;
+    position: relative;
+}
+@media(max-width: 768px){
+    .campoNomeEmail{
+        flex-direction: column;
+        gap: 10px;
+    }
+    form{
+        width: 100%;    
+    }
+}

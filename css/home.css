@@ -1,0 +1,404 @@
+:root{
+    --cor-fundo1: #404040;
+    --cor-fundo2: #191919;
+    --cor-fundo3: #202020;
+    --cor-fundo4: #2a2826a9;
+    --cor-fundo5: #11191F;
+    --cor-line: #7A7A7A;
+    --cor-texto1: #F0992B;
+    --cor-texto2: #FFE8D0;
+    --cor-texto3: #fff;
+    --cor-texto4: #DFB57A;
+    --fonte-texto1: 'Inter',Sans-Serif;
+    --fonte-texto2: 'Sacramento', Sans-Serif;
+    --fonte-texto3: 'Jost', Sans-Serif;
+    --fonte-texto4: 'Josefin Sans', Sans-Serif;
+    --fonte-texto5: 'Roboto', Sans-Serif;
+}
+html, body{
+    scroll-behavior: smooth;
+}
+.conteudo{
+    width: 100%;
+    position: relative;
+}
+.banner{
+    width: 100%;
+    height: calc(100vh - 80px);
+    top: 80px;
+    position: relative;
+    background: url("../imagens/preto2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conteudo-banner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.elemento-banner{
+    width: 63%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+}
+.elemento-banner h5{
+    font-size: min(35px, 5vw);
+    color: var(--cor-texto4);
+    font-family: var(--fonte-texto2);
+    position: relative;
+    left: 2vw;
+    width: 97%;
+}
+.elemento-banner h2{
+    font-size: min(90px, 5vw);
+    color: var(--cor-texto3);
+    font-family: var(--fonte-texto3);
+    position: relative;
+    left: 2vw;
+    width: 97%;
+}
+.btn-banner{
+    font-size: 1.1rem;
+    color: var(--cor-texto3);
+    font-family: var(--fonte-texto1);
+    border: 1px solid var(--cor-texto4);
+    padding: 1.1rem;
+    width: 30vw;
+    position: absolute;
+    bottom: 0;
+    border-radius: 5px;
+    left: 2vw;
+    text-align: center;
+    overflow: hidden;
+    z-index: 1;
+    transition: 1s;
+}
+.btn-banner::before{
+    content: "";
+    background: var(--cor-texto4);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    left: 0;
+    bottom: -20vh;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    transition: .5s;
+}
+.btn-banner:hover::before{
+    bottom: 0;
+}
+.sobre{
+    width: 100%;
+    height: 110vh;
+    position: relative;
+    top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-sobre{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    top: 5vh;
+    gap: 5vw;
+}
+.img-sobre{
+    width: 40vw;
+    height: 80%;
+    border-radius: 5px;
+    top: 5vh;
+    position: relative;
+}
+.textos-sobre{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    gap: 5vh;
+}
+.textos-sobre h5{
+    font-size: 2rem;
+    font-family: var(--fonte-texto2);
+    color: var(--cor-texto4);
+    font-weight: 200;
+    width: 100%;
+}
+.textos-sobre .subtitulo{
+    color: var(--cor-texto3);
+    font-family: var(--fonte-texto4);
+    font-size: 1.8rem;
+    width: 100%;
+}
+.textos-sobre .descricao{
+    color: var(--cor-line);
+    font-family: var(--fonte-texto5);
+    font-size: 1.2rem;
+    width: 100%;
+}
+.textos-sobre a{
+    color: var(--cor-texto3);
+    font-family: var(--fonte-texto1);
+    border: 1px solid var(--cor-texto4);
+    padding: 1rem;
+    width: 40%;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    bottom: 0;
+    overflow: hidden;
+}
+.textos-sobre a::before{
+    content: "";
+    background: var(--cor-texto4);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    left: 0;
+    bottom: -20vh;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    transition: .5s;
+}
+.textos-sobre a:hover::before{
+    bottom: 0;
+}
+
+.cardapio{
+    height: 140vh;
+    position: relative;
+    top: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+.fundo-cardapio{
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    background: url("../imagens/preto2.jpg");
+    filter: brightness(30%);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.tituloCardapio{
+    padding: 1rem;
+    font-size: 2rem;
+    color: var(--cor-texto3);
+    font-family: var(--fonte-texto4);
+}
+.container-cardapio{
+    width: 70%;
+    height: 70%;
+    background: var(--cor-fundo4);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.menu-cardapio{
+    border-bottom-style: dashed;
+    border-color: var(--cor-texto1);
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 2vh 0;
+}
+.envolver-nomeComida{
+    display: flex;
+    justify-content: space-between;
+}
+.nome-comida{
+    color: var(--cor-texto3);
+    font-family: var(--fonte-texto4);
+    font-size: 1.3rem;
+    font-weight: 500;
+    border-bottom: 1px solid var(--cor-texto1);
+}
+.precoComida{
+    color: var(--cor-texto4);
+    font-family: var(--fonte-texto4);
+    font-weight: 500;
+    border-bottom: 1px solid var(--cor-texto1);
+}
+.descricao-comida{
+    color: var(--cor-texto2);
+    padding: 1vh;
+}
+.link-cardapio{
+    position: relative;
+    z-index: 1;
+    color: var(--cor-texto3);
+    font-family: var(--fonte-texto1);
+    border: 1px solid var(--cor-texto1);
+    border-radius: 5px;
+    padding: 1rem;
+    width: 30%;
+    text-align: center;
+    overflow: hidden;
+}
+.link-cardapio::before{
+    content: "";
+    background: var(--cor-texto4);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    left: 0;
+    bottom: -20vh;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    transition: .5s;
+}
+.link-cardapio:hover::before{
+    bottom: 0;
+}
+.delivery{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 15vh;
+    background: var(--cor-fundo5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerDelivery{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+.decricaoDelivery{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+}
+.textoDelivery1{
+    color: var(--cor-texto4);
+    font-family: var(--fonte-texto2);
+    font-size: 2rem;
+}
+.textoDelivery2{
+    color: var(--cor-texto3);
+    font-family: var(--fonte-texto4);
+    font-size: 2rem;
+}
+.textoDelivery3{
+    color: var(--cor-line);
+    font-size: 1.2rem;
+    font-family: var(--fonte-texto5);
+}
+.delivery-img{
+    width: 50%;
+    height: 70%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.delivery-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.containerFooter{
+    position: relative;
+    top: 15vh;
+}
+@media(max-width: 1233px){
+    .elemento-banner h2{
+        font-size: 4rem;
+    }
+    .elemento-banner{
+        width: 100%;
+    }
+}
+@media(max-width: 768px){
+    .elemento-banner{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        overflow: hidden;
+    }
+    .btn-banner{
+        position: absolute;
+        margin: 0 18vw;
+        width: 60%;
+    }
+    .elemento-banner h2,h5,.btn-banner{
+        left: 0;
+    }
+    .container-sobre{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .img-sobre{
+        width: 50%;
+        height: 50%;
+    }
+    .textos-sobre{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 2vh;
+    }
+    .containerDelivery{
+        flex-direction: column-reverse;
+    }
+    .decricaoDelivery{
+        width: 100%;
+        text-align: center;
+    }
+    .containerFooter{
+        height: 150vh;
+    }
+}
+@media(max-width: 693px){
+    .btn-banner{
+        width: 60%;
+    }
+}
+@media(max-width: 449px){
+    .elemento-banner h2{
+        font-size: 3rem;
+    }
+    .btn-banner{
+        padding: 0.8rem;
+    }
+}

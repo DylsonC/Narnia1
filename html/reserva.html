@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Mesas</title>
+    <link rel="shortcut icon" href="../imagens/logo-fanvicon.png" type="image/x-icon">
+
+    <!--LINKS CSS-->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/reserva.css">
+    <!--XXXXXXXXX-->
+
+    <!--FONTES AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--XXXXXXXXXXXXXX-->
+
+</head>
+<body>
+    
+    <!--menu de navegação-->
+    <header class="topo" id="topo">
+
+        <!--logo-->
+        <div class="container-logo">
+            <a href="../index.html" class="logo"><!--link para onde vai ser direcionado-->
+                <img src="../imagens/logo-transparente.png" alt="" class="logo-img"><!--imagem da logo-->
+            </a>
+        </div>
+        <!--final da logo-->
+
+        <nav class="container-links">
+            <a href="../index.html" class="link">Início</a>
+            <a href="../html/cardapio.html" class="link">Cardápio</a>
+            <a href="../html/sobre.html" class="link">Sobre Nós</a>
+            <a href="../html/suporte.html" class="link">Suporte</a>
+        </nav>
+
+        <a href="./html/reserva.html" class="link-reserva active3">Faça sua Reserva</a>
+
+        <!--XXXXXXXXXXXXXXXXXXXXXXXXXX-->
+
+        <div class="icone-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="menu-toglle">
+
+            <div class="fecha-toggle"><i class="fa-solid fa-xmark"></i></div>
+
+            <img src="../imagens/img-baner.png" alt="" class="img-toggle">
+
+            <nav class="container-links2">
+                <a href="../index.html" class="link2">Início</a>
+                <a href="../html/cardapio.html" class="link2">Cardápio</a>
+                <a href="../html/sobre.html" class="link2">Sobre Nós</a>
+                <a href="../html/suporte.html" class="link2">Suporte</a>
+            </nav>
+    
+            <a href="../html/reserva.html" class="link-reserva2 active3">Faça sua Reserva</a>
+        </div>
+    </header>
+
+    
+    <!--final do menu-->
+
+    <main>
+        <section class="container-banner-reserva">
+            <div class="banner-reserva"></div>
+        </section>
+
+        <section class="container-reserva">
+            <h1 class="titulo-reserva">Faça a Sua reserva</h1>
+
+            <form class="reservation-form" action="">
+                <div class="container-tipo-reserva">
+                    
+                    <div class="reserva-normal check-input">
+                        <input type="checkbox" name="" id="normal" class="normal">
+                        <label for="normal" class="label-check"><span class="one"></span><span class="two"></span></label>
+                        <label for="normal">Normal</label>
+                    </div>
+
+                    <div class="reserva-aniversario check-input">
+                        <input type="checkbox" name="" id="aniversario" class="aniversario">
+                        <label for="aniversario" class="label-check"><span class="one"></span><span class="two"></span></label>
+                        <label for="aniversario">Aniversário</label>
+                    </div>
+
+                    <div class="reserva-casamaneto check-input">
+                        <input type="checkbox" name="" id="casamento" class="casamento">
+                        <label for="casamento" class="label-check"><span class="one"></span><span class="two"></span></label>
+                        <label for="casamento">Casamento</label>
+                    </div>
+
+                </div>
+                <div class="nome-email-telefone">
+
+                    <label for="name">Nome Completo:</label>
+                    <input type="text" id="name" placeholder="Digite o seu nome completo" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" placeholder="exemplo@gmail.com" required>
+
+                    <label for="phone">Telefone:</label>
+                    <input type="tel" id="phone" class="phone" placeholder="Digite o seu número" required>
+
+                </div>
+
+                <div class="data-hora-pessoas">
+
+                    <label for="date">Data:</label>
+                    <input type="date" id="date" required>
+
+                    <label for="time">Horário:</label>
+                    <select name="" id="time" required>
+                        <option value="" disabled selected>Informe o Horário</option>
+                        <option value="" class="hora">07:00</option>
+                        <option value="" class="hora">08:00</option>
+                        <option value="" class="hora">09:00</option>
+                        <option value="" class="hora">10:00</option>
+                        <option value="" class="hora">11:00</option>
+                        <option value="" class="hora">12:00</option>
+                        <option value="" class="hora">13:00</option>
+                        <option value="" class="hora">14:00</option>
+                        <option value="" class="hora">15:00</option>
+                        <option value="" class="hora">16:00</option>
+                        <option value="" class="hora">17:00</option>
+                        <option value="" class="hora">18:00</option>
+                        <option value="" class="hora">19:00</option>
+                        <option value="" class="hora">20:00</option>
+                        <option value="" class="hora">21:00</option>
+                        <option value="" class="hora">22:00</option>
+                    </select>
+
+                    <label for="guests">Número de pessoas:</label>
+                    <input type="number" id="guests" placeholder="Digite a quantidade de pessoas" required>
+
+                </div> 
+
+                <div class="campo-de-texto">
+                    <label for="comments">Observações:</label>
+                    <textarea id="comments"></textarea>
+                </div>
+
+                <div class="btn-wrapper"><input type="submit" value="Enviar Reserva" class="btn-reserva"></div>
+
+                <div class="container-info">
+                    <p class="info"><i class="fa-solid fa-location-dot"></i>Local: ETE Jurandir Bezerra Lins - Encanto Igarassú, Igarassu - PE</p>
+                    <p class="info"><i class="fa-solid fa-phone"></i>Contato: (81)900000000</p>
+                </div>
+                <div class="local">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.405179601259!2d-34.911183125660344!3d-7.852593378043675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab14d50f29c135%3A0xb7c10c823a37123b!2sEscola%20T%C3%A9cnica%20Estadual%20Jurandir%20Bezerra%20Lins!5e0!3m2!1spt-PT!2sbr!4v1687208133853!5m2!1spt-PT!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!--roda-pé-->
+    <div class="containerFooter">
+        <footer class="rodaPe">
+            <div class="logo">
+                <a href="../index.html"><img src="../imagens/logo-transparente.png" alt="" class="logo-img"></a>
+            </div>
+            <div class="conteudoRodape">
+                
+                <div class="tituloRodape">
+                    <p class="textoRodape">Importante</p>
+                    <div class="envolverLink-rodape">
+                        <a href="#" class="linkRodape">Início</a>
+                        <a href="#" class="linkRodape">Cardápio</a>
+                    </div>
+                    <div class="envolverLink-rodape">
+                        <a href="#" class="linkRodape">Sobre Nós</a>
+                        <a href="#" class="linkRodape">Suporte</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="redes-sociais">
+                <p class="textoRodape">Sociais</p>
+                    <div class="envolverSociais">
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+            </div>
+
+            <div class="direitos-de-criacao">Criado por Vagner e sua Equipe — 2023</div>
+        </footer>
+    </div>
+    <!--final do roda-pé-->
+
+
+    <!--SCRIPTS-->
+
+    <script type="text/javascript" src="../js/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+
+
+    <script src="../js/reserva.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

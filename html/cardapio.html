@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio</title>
+    <link rel="shortcut icon" href="../imagens/logo-fanvicon.png" type="image/x-icon">
+
+    <!--LINKS CSS-->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/cardapio.css">
+    <!--XXXXXXXXX-->
+
+    <!--FONTES AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--XXXXXXXXXXXXXX-->
+</head>
+<body>
+    <!--menu de navegação-->
+    <header class="topo" id="topo">
+
+        <!--logo-->
+        <div class="container-logo">
+            <a href="../index.html" class="logo"><!--link para onde vai ser direcionado-->
+                <img src="../imagens/logo-transparente.png" alt="" class="logo-img"><!--imagem da logo-->
+            </a>
+        </div>
+        <!--final da logo-->
+
+        <nav class="container-links">
+            <a href="../index.html" class="link">Início</a>
+            <a href="../html/cardapio.html" class="link active">Cardápio</a>
+            <a href="../html/sobre.html" class="link">Sobre Nós</a>
+            <a href="../html/suporte.html" class="link">Suporte</a>
+        </nav>
+
+        <a href="./reserva.html" class="link-reserva">Faça sua Reserva</a>
+
+        <!--XXXXXXXXXXXXXXXXXXXXXXXXXX-->
+
+        <div class="icone-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="menu-toglle">
+
+            <div class="fecha-toggle"><i class="fa-solid fa-xmark"></i></div>
+
+            <img src="../imagens/img-baner.png" alt="" class="img-toggle">
+
+            <nav class="container-links2">
+                <a href="../index.html" class="link2">Início</a>
+                <a href="../html/cardapio.html" class="link2 active2">Cardápio</a>
+                <a href="../html/sobre.html" class="link2">Sobre Nós</a>
+                <a href="../html/suporte.html" class="link2">Suporte</a>
+            </nav>
+    
+            <a href="../html/reserva.html" class="link-reserva2">Faça sua Reserva</a>
+        </div>
+    </header>
+
+    
+    <!--final do menu-->
+
+    <!--Início do conteúdo-->
+    <main class="conteudo">
+        
+        <section class="pesquisaProduto"><!--Para envolver os filhos desta section-->
+
+            <div class="fundoPesquisa"></div><!--para o fundo com uma imagem-->
+
+            <div class="containerPesquisa"><!--Envolver o campo de pesquisa-->
+                <h1><strong>Cardápio</strong></h1>
+                <input type="search" class="pesquisaComida" name="" id="" placeholder="Pesquise a sua comida"><!--Input para pesquisa de produtos-->
+            </div>
+        </section><!--final da section para pesquisa-->
+
+        <section class="navCardapio">
+
+            <div class="envolverProdutos">
+
+                <div class="container-compra">
+                    <form action="" class="compra">
+                        <i class="fa-solid fa-xmark closed"></i>
+                        <h1 id="nome-da-comida" class="nome-da-comida">nome da comida</h1>
+                        <img src="" alt="" id="img-da-comida" class="img-da-comida">
+                        <div class="wrapper-valor">
+                            <p class="tag">R$</p><p id="valor-da-comida">00,00</p>
+                        </div>
+
+                        <label for="quantidade">Quatidade:<input type="text" id="quantidade"></label>
+
+                        <button type="submit" class="btn-pedir">Fazer Pedido</button>
+                    </form>
+                </div>
+
+                <div class="containerProduto" id="produtos">
+
+                    <div class="comida">
+                        <div class="envolverCartaz">
+                            <div class="descricaoComida">
+                                <img src="https://www.publicdomainpictures.net/pictures/240000/nahled/burger-on-a-wooden-backgound.jpg" alt="" class="img-descricao">
+                                <h2 class="tituloDiscricao">Ingredientes:</h2>
+                                <p>Pão, Hambuguer, Alface, Cebola, pimentão, Queijo Cheddar, Queijo Mussarela, Tomate e Bacon.</p>
+                            </div>
+                            <div class="cartaz-comida">
+                                <img src="https://www.publicdomainpictures.net/pictures/240000/nahled/burger-on-a-wooden-backgound.jpg" alt="" class="img-comida" id="img-comida">
+                            </div>
+                            <div class="textoComida">
+                                <p id="nomeComida" class="nomeComida">Hambuguer Tradicional</p>
+                            </div>
+                        </div>
+                        <button class="pedirComida" data-nomeComida="Hambuguer Tradicional"><div class="valor" id="valor">10.99</div></button>
+                    </div>
+
+
+                    <div class="comida">
+                        <div class="envolverCartaz">
+                            <div class="descricaoComida">
+                                <img src="https://img.cybercook.com.br/receitas/819/pizza-a-portuguesa-1.jpeg" alt="" class="img-descricao">
+                                <h2 class="tituloDiscricao">Ingredientes:</h2>
+                                <p>Massa de pizza, Queijo Muçarela, Presunto, Tomate, Cebola, azeitonas, ovo cozido, Molho de tomate.</p>
+                            </div>
+                            <div class="cartaz-comida">
+                                <img src="https://img.cybercook.com.br/receitas/819/pizza-a-portuguesa-1.jpeg" alt="" class="img-comida" id="img-comida">
+                            </div>
+                            <div class="textoComida">
+                                <p id="nomeComida" class="nomeComida">Pizza Portuguesa</p>
+                            </div>
+                        </div>
+                
+                        <button class="pedirComida"><div class="valor" id="valor">15.99</div></button>
+                    </div>
+
+
+                    <div class="comida">
+                        <div class="envolverCartaz">
+                            <div class="descricaoComida">
+                                <img src="https://cdn.casaeculinaria.com/wp-content/uploads/2023/03/13101208/Batata-frita.jpg" alt="" class="img-descricao">
+                                <h2 class="tituloDiscricao">Ingredientes:</h2>
+                                <p>Batata Frita 180g, Sal, Fritado no Òleo.</p>
+                            </div>
+                            <div class="cartaz-comida">
+                                <img src="https://cdn.casaeculinaria.com/wp-content/uploads/2023/03/13101208/Batata-frita.jpg" alt="" class="img-comida" id="img-comida">
+                            </div>
+                            <div class="textoComida">
+                                <p class="nomeComida">Batata Frita</p>
+                            </div>
+                        </div>
+                
+                        <button class="pedirComida"><div class="valor" id="valor">9.99</div></button>
+                    </div>
+
+
+                    <div class="comida">
+                        <div class="envolverCartaz">
+                            <div class="descricaoComida">
+                                <img src="https://tudodereceitas.com.br/wp-content/uploads/2022/05/Bolo-vulcao-de-cenoura.jpg" alt="" class="img-descricao">
+                                <h2 class="tituloDiscricao">Ingredientes:</h2>
+                                <p>Massa de bolo branco, Corbetura de chocolate e Granulado de chocolate armago.</p>
+                            </div>
+                            <div class="cartaz-comida">
+                                <img src="https://www.oetker.com.br/Recipe/Recipes/oetker.com.br/br-pt/baking/image-thumb__176612__RecipeDetailsLightBox/bolo-vulcao-de-cenoura.jpg" alt="" class="img-comida" id="img-comida">  
+                            </div>
+                            <div class="textoComida">
+                                <p class="nomeComida">Bolo Vulcão</p>
+                            </div>
+                        </div>
+                
+                        <button class="pedirComida"><div class="valor" id="valor">19.99</div></button>
+                    </div>
+
+                    <div class="comida">
+                        <div class="envolverCartaz">
+                            <div class="descricaoComida">
+                                <img src="https://img.cybercook.com.br/receitas/815/sorvete-de-morango-vegano.jpeg" alt="" class="img-descricao">
+                                <h2 class="tituloDiscricao">Ingredientes:</h2>
+                                <p>Sorvete de morango em ate 5 bolas no pote, direito a corbetura de morango, granulado.</p>
+                            </div>
+                            <div class="cartaz-comida">
+                                <img src="https://img.cybercook.com.br/receitas/815/sorvete-de-morango-vegano.jpeg" alt="" class="img-comida" id="img-comida">
+                            </div>
+                            <div class="textoComida">
+                                <p class="nomeComida">Delicia de Morango</p>
+                            </div>
+                        </div>
+                
+                        <button class="pedirComida"><div class="valor" id="valor">7.99</div></button>
+                    </div>
+
+                    <div class="comida">
+                        <div class="envolverCartaz">
+                            <div class="descricaoComida">
+                                <img src="https://img.freepik.com/fotos-premium/comida-brasileira-de-acai_250479-50.jpg" alt="" class="img-descricao">
+                                <h2 class="tituloDiscricao">Ingredientes:</h2>
+                                <p>Açai no copão 250g, Leite condesado, Amendoin, MeM, 1 Morango, Biscoito.</p>
+                            </div>
+                            <div class="cartaz-comida">
+                                <img src="https://img.freepik.com/fotos-premium/comida-brasileira-de-acai_250479-50.jpg" alt="" class="img-comida" id="img-comida">
+                            </div>
+                            <div class="textoComida">
+                                <p class="nomeComida">Açaí</p>
+                            </div>
+                        </div>
+                
+                        <button class="pedirComida"><div class="valor" id="valor">14.00</div></button>
+                    </div>
+
+                    <div class="comida">
+                        <div class="envolverCartaz">
+                            <div class="descricaoComida">
+                                <img src="https://www.anuncioemfoco.com.br/imagens/anuncios/110516123550/disk-entrega-de-quentinha-em-duque-de-caxias-rj-43460.jpg" alt="" class="img-descricao">
+                                <h2 class="tituloDiscricao">Ingredientes:</h2>
+                                <p>Carne de boi 100g, arroz branco, feijão preto, batat frita, alface, farofa e tomate.</p>
+                            </div>
+                            <div class="cartaz-comida">
+                                <img src="https://www.anuncioemfoco.com.br/imagens/anuncios/110516123550/disk-entrega-de-quentinha-em-duque-de-caxias-rj-43460.jpg" alt="" class="img-comida" id="img-comida">
+                            </div>
+                            <div class="textoComida">
+                                <p class="nomeComida">Quentinha</p>
+                            </div>
+                        </div>
+                
+                        <button class="pedirComida"><div class="valor" id="valor">16.00</div></button>
+                    </div>
+
+                    <div class="comida">
+                        <div class="envolverCartaz">
+                            <div class="descricaoComida">
+                                <img src="https://www.jornalpp.com.br/wp-content/uploads/2021/09/2-comp-descalvado-descalvadense-esta-entre-os-30-semifinalistas-do-super-mega-burguer-de-2021-30-09.jpg" alt="" class="img-descricao">
+                                <h2 class="tituloDiscricao">Ingredientes:</h2>
+                                <p>Pão, Hambuguer, Alface, Cebola, pimentão, Queijo Cheddar, Queijo Mussarela, Tomate e Bacon.</p>
+                            </div>
+                            <div class="cartaz-comida">
+                                <img src="https://www.jornalpp.com.br/wp-content/uploads/2021/09/2-comp-descalvado-descalvadense-esta-entre-os-30-semifinalistas-do-super-mega-burguer-de-2021-30-09.jpg" alt="" class="img-comida" id="img-comida">
+                            </div>
+                            <div class="textoComida">
+                                <p class="nomeComida">MegaBuguer</p>
+                            </div>
+                        </div>
+                
+                        <button class="pedirComida"><div class="valor" id="valor">9.99</div></button>
+                    </div>
+
+                    <div class="comida">
+                        <div class="envolverCartaz">
+                            <div class="descricaoComida">
+                                <img src="https://assets.unileversolutions.com/recipes-v2/230446.jpg" alt="" class="img-descricao">
+                                <h2 class="tituloDiscricao">Ingredientes:</h2>
+                                <p>Pão, Dois Hambugueres, Alface, Queijo Cheddar, Queijo Mussarela, Tomate, Molho Especial.</p>
+                            </div>
+                            <div class="cartaz-comida">
+                                <img src="https://assets.unileversolutions.com/recipes-v2/230446.jpg" alt="" class="img-comida" id="img-comida">
+                            </div>
+                            <div class="textoComida">
+                                <p class="nomeComida">Hambuguer Duplo</p>
+                            </div>
+                        </div>
+                        <button class="pedirComida"><div class="valor" id="valor">18.00</div></button>
+                    </div>
+
+
+                    <div class="comida">
+                        <div class="envolverCartaz">
+                            <div class="descricaoComida">
+                                <img src="https://cdn0.tudoreceitas.com/pt/posts/9/8/3/pizza_calabresa_e_mussarela_4389_orig.jpg" alt="" class="img-descricao">
+                                <h2 class="tituloDiscricao">Ingredientes:</h2>
+                                <p>Massa de Pizza, 4 queijos, Mussarela, 8 fatias.</p>
+                            </div>
+                            <div class="cartaz-comida">
+                                <img src="https://cdn0.tudoreceitas.com/pt/posts/9/8/3/pizza_calabresa_e_mussarela_4389_orig.jpg" alt="" class="img-comida" id="img-comida">
+                            </div>
+                            <div class="textoComida">
+                                <p class="nomeComida">Pizza Calabresa</p>
+                            </div>
+                        </div>
+                
+                        <button class="pedirComida"><div class="valor" id="valor">45.00</div></button>
+                    </div>
+
+
+                    <div class="comida">
+                        <div class="envolverCartaz">
+                            <div class="descricaoComida">
+                                <img src="https://anamariabraga.globo.com/wp-content/uploads/2020/02/batata-frita-com-queijo.jpg" alt="" class="img-descricao">
+                                <h2 class="tituloDiscricao">Ingredientes:</h2>
+                                <p>Porção media de batata frita, Queijo Mussarela derretido, Fatias de mortadela frita.</p>
+                            </div>
+                            <div class="cartaz-comida">
+                                <img src="https://anamariabraga.globo.com/wp-content/uploads/2020/02/batata-frita-com-queijo.jpg" alt="" class="img-comida" id="img-comida">
+                            </div>
+                            <div class="textoComida">
+                                <p class="nomeComida">Batata-Frita-com-Queijo</p>
+                            </div>
+                        </div>
+                
+                        <button class="pedirComida"><div class="valor" id="valor">14.00</div></button>
+                    </div>
+
+
+                    <div class="comida">
+                        <div class="envolverCartaz">
+                            <div class="descricaoComida">
+                                <img src="https://www.dulcerestaurantecolonial.com.br/wp-content/uploads/2019/08/Bolo-de-cenoura-Saiba-as-origens-Dulce-Caf%C3%A9-Colonial.jpg" alt="" class="img-descricao">
+                                <h2 class="tituloDiscricao">Ingredientes:</h2>
+                                <p>Massa de Bolo feito com cenora, cobertura de chocolate, 14 fatias.</p>
+                            </div>
+                            <div class="cartaz-comida">
+                                <img src="https://www.dulcerestaurantecolonial.com.br/wp-content/uploads/2019/08/Bolo-de-cenoura-Saiba-as-origens-Dulce-Caf%C3%A9-Colonial.jpg" alt="" class="img-comida" id="img-comida">
+                            </div>
+                            <div class="textoComida">
+                                <p class="nomeComida">Bolo Cenoura</p>
+                            </div>
+                        </div>
+                
+                        <button class="pedirComida"><div class="valor" id="valor">20.00</div></button>
+                    </div>
+
+                    <div class="comida">
+                        <div class="envolverCartaz">
+                            <div class="descricaoComida">
+                                <img src="https://uploads.onsize.com.br/cndl/varejosa/2020/07/18175520/download.jpg" alt="" class="img-descricao">
+                                <h2 class="tituloDiscricao">Ingredientes:</h2>
+                                <p>Pote Cascão comestivel, 3 a 4 bolas de soverte, sabores de chocolate, morango, baumilha, leitininho e menta.</p>
+                            </div>
+                            <div class="cartaz-comida">
+                                <img src="https://uploads.onsize.com.br/cndl/varejosa/2020/07/18175520/download.jpg" alt="" class="img-comida" id="img-comida">
+                            </div>
+                            <div class="textoComida">
+                                <p class="nomeComida">Sorvete Cascão</p>
+                            </div>
+                        </div>
+                
+                        <button class="pedirComida"><div class="valor" id="valor">5.00</div></button>
+                    </div>
+
+                    <div class="comida">
+                        <div class="envolverCartaz">
+                            <div class="descricaoComida">
+                                <img src="https://doutorjairo.uol.com.br/media/_versions/istock-refrigerante_widelg.jpg" alt="" class="img-descricao">
+                                <h2 class="tituloDiscricao">Ingredientes:</h2>
+                                <p>Coca-cola, Sprite, Fanta, Kuat, Guaraná Antartica e Pepsi de 500ml a 1L.</p>
+                            </div>
+                            <div class="cartaz-comida">
+                                <img src="https://doutorjairo.uol.com.br/media/_versions/istock-refrigerante_widelg.jpg" alt="" class="img-comida" id="img-comida">
+                            </div>
+                            <div class="textoComida">
+                                <p class="nomeComida">Refrigerante</p>
+                            </div>
+                        </div>
+                
+                        <button class="pedirComida"><div class="valor" id="valor">2.50</div></button>
+                    </div>
+
+                    <div class="comida">
+                        <div class="envolverCartaz">
+                            <div class="descricaoComida">
+                                <img src="https://cdn.v2v.net/0x40:960x680/1200x0/filters:still():format(jpeg):quality(80):fill(white,true)/66043a46-93b9-44be-81fe-3feb7cd7266e.png?v=63754696627" alt="" class="img-descricao">
+                                <h2 class="tituloDiscricao">Ingredientes:</h2>
+                                <p>Molho Guisado, Macarrão, batata guisada, verdura e legumes, dois pedaços de carnes.</p>
+                            </div>
+                            <div class="cartaz-comida">
+                                <img src="https://cdn.v2v.net/0x40:960x680/1200x0/filters:still():format(jpeg):quality(80):fill(white,true)/66043a46-93b9-44be-81fe-3feb7cd7266e.png?v=63754696627" alt="" class="img-comida" id="img-comida">
+                            </div>
+                            <div class="textoComida">
+                                <p class="nomeComida">Quentinha Guisada</p>
+                            </div>
+                        </div>
+                
+                        <button class="pedirComida"><div class="valor" id="valor">20.00</div></button>
+                    </div>
+
+                    <div class="comida">
+                        <div class="envolverCartaz">
+                            <div class="descricaoComida">
+                                <img src="https://s2.glbimg.com/VGa08hcwX6zlQC5ymfyD-SSOBeA=/smart/e.glbimg.com/og/ed/f/original/2020/07/03/receita-cheesebacon.jpg" alt="" class="img-descricao">
+                                <h2 class="tituloDiscricao">Ingredientes:</h2>
+                                <p>Pão, Hambuguer 650g, bacon, Queijo Mussarela, Maionese Especial.</p>
+                            </div>
+                            <div class="cartaz-comida">
+                                <img src="https://s2.glbimg.com/VGa08hcwX6zlQC5ymfyD-SSOBeA=/smart/e.glbimg.com/og/ed/f/original/2020/07/03/receita-cheesebacon.jpg" alt="" class="img-comida" id="img-comida">
+                            </div>
+                            <div class="textoComida">
+                                <p class="nomeComida">Hambuguer Andromeda</p>
+                            </div>
+                        </div>
+                
+                        <button class="pedirComida"><div class="valor" id="valor">10.00</div></button>
+                    </div>
+                    <div class="comida">
+                        <div class="envolverCartaz">
+                            <div class="descricaoComida">
+                                <img src="https://s2-casavogue.glbimg.com/GRF9KCq-1hiz5uSs-xX9Go_KqIc=/0x0:2048x1365/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_d72fd4bf0af74c0c89d27a5a226dbbf8/internal_photos/bs/2022/p/X/eb4KQdToys327cGqnRGg/receita-ceboloni-bacon.jpg" alt="" class="img-descricao">
+                                <h2 class="tituloDiscricao">Ingredientes:</h2>
+                                <p>Pão, Hambuguer, Pedaço de frango crocante, Fatias de carne suina, Queijo Cheddar, Queijo Mussarela,Bacon.</p>
+                            </div>
+                            <div class="cartaz-comida">
+                                <img src="https://s2-casavogue.glbimg.com/GRF9KCq-1hiz5uSs-xX9Go_KqIc=/0x0:2048x1365/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_d72fd4bf0af74c0c89d27a5a226dbbf8/internal_photos/bs/2022/p/X/eb4KQdToys327cGqnRGg/receita-ceboloni-bacon.jpg" alt="" class="img-comida" id="img-comida">
+                            </div>
+                            <div class="textoComida">
+                                <p class="nomeComida">TradiBuguer</p>
+                            </div>
+                        </div>
+                        <button class="pedirComida"><div class="valor" id="valor">10.00</div></button>
+                    </div>
+
+
+                    <div class="comida">
+                        <div class="envolverCartaz">
+                            <div class="descricaoComida">
+                                <img src="https://www.sabornamesa.com.br/media/k2/items/cache/ada34cd2101afafaba465aad112ee3c1_XL.jpg" alt="" class="img-descricao">
+                                <h2 class="tituloDiscricao">Ingredientes:</h2>
+                                <p>Massa de Pizza, Porção de fatias de frango sobre a pizza, queijo mussarela e queijo qualho.</p>
+                            </div>
+                            <div class="cartaz-comida">
+                                <img src="https://www.sabornamesa.com.br/media/k2/items/cache/ada34cd2101afafaba465aad112ee3c1_XL.jpg" alt="" class="img-comida" id="img-comida">
+                            </div>
+                            <div class="textoComida">
+                                <p class="nomeComida">Pizza de Frango</p>
+                            </div>
+                        </div>
+                
+                        <button class="pedirComida"><div class="valor" id="valor">45.00</div></button>
+                    </div>
+
+
+                    <div class="comida">
+                        <div class="envolverCartaz">
+                            <div class="descricaoComida">
+                                <img src="https://braseirorestaurante.com.br/wp-content/uploads/2020/07/Batata-Frita-com-Cheddar.jpg" alt="" class="img-descricao">
+                                <h2 class="tituloDiscricao">Ingredientes:</h2>
+                                <p>Porção media de batata frita, queijo cheddar e opção de pedaços de bacon ou mortadela.</p>
+                            </div>
+                            <div class="cartaz-comida">
+                                <img src="https://braseirorestaurante.com.br/wp-content/uploads/2020/07/Batata-Frita-com-Cheddar.jpg" alt="" class="img-comida" id="img-comida">
+                            </div>
+                            <div class="textoComida">
+                                <p class="nomeComida">Batata Frita com Cheddar</p>
+                            </div>
+                        </div>
+                
+                        <button class="pedirComida"><div class="valor" id="valor">12.00</div></button>
+                    </div>
+
+
+                    <div class="comida">
+                        <div class="envolverCartaz">
+                            <div class="descricaoComida">
+                                <img src="https://receitinhas.com.br/wp-content/uploads/2023/05/Pastel-de-feira-caseiro.jpg" alt="" class="img-descricao">
+                                <h2 class="tituloDiscricao">Ingredientes:</h2>
+                                <p>Massa frita, quejo qualho, opção de frango,mortadela ou carne moida.</p>
+                            </div>
+                            <div class="cartaz-comida">
+                                <img src="https://receitinhas.com.br/wp-content/uploads/2023/05/Pastel-de-feira-caseiro.jpg" alt="" class="img-comida" id="img-comida">
+                            </div>
+                            <div class="textoComida">
+                                <p class="nomeComida">Pastel</p>
+                            </div>
+                        </div>
+                
+                        <button class="pedirComida"><div class="valor" id="valor">7.00</div></button>
+                    </div>
+
+                    <div class="comida">
+                        <div class="envolverCartaz">
+                            <div class="descricaoComida">
+                                <img src="https://revistasaboresdosul.com.br/wp-content/uploads/2014/12/9-sorvetes-para-se-refrescar-no-verao-13.jpg" alt="" class="img-descricao">
+                                <h2 class="tituloDiscricao">Ingredientes:</h2>
+                                <p>Soverte caseiro de amendoin com gotas de chocolate e biscoitos, acompanhante de dois brigadeiros.</p>
+                            </div>
+                            <div class="cartaz-comida">
+                                <img src="https://revistasaboresdosul.com.br/wp-content/uploads/2014/12/9-sorvetes-para-se-refrescar-no-verao-13.jpg" alt="" class="img-comida" id="img-comida">
+                            </div>
+                            <div class="textoComida">
+                                <p class="nomeComida">Helados Chungo</p>
+                            </div>
+                        </div>
+                
+                        <button class="pedirComida"><div class="valor" id="valor">9.99</div></button>
+                    </div>
+
+                    <div class="comida">
+                        <div class="envolverCartaz">
+                            <div class="descricaoComida">
+                                <img src="https://www.rbsdirect.com.br/imagesrc/24869374.jpg?w=700" alt="" class="img-descricao">
+                                <h2 class="tituloDiscricao">Ingredientes:</h2>
+                                <p>Acerola, Goiaba, Limão, Laranja, Maçã, Manga, Melancia e Abacaxi com Hortelã no copo ou jarra.</p>
+                            </div>
+                            <div class="cartaz-comida">
+                                <img src="https://www.rbsdirect.com.br/imagesrc/24869374.jpg?w=700" alt="" class="img-comida" id="img-comida">
+                            </div>
+                            <div class="textoComida">
+                                <p class="nomeComida">Sucos</p>
+                            </div>
+                        </div>
+                
+                        <button class="pedirComida"><div class="valor" id="valor">2.00</div></button>
+                    </div>
+
+                    <div class="comida">
+                        <div class="envolverCartaz">
+                            <div class="descricaoComida">
+                                <img src="https://media.istockphoto.com/id/1300336353/pt/foto/marmita-or-marmitex-meal-to-take-food-in-the-box.jpg?s=612x612&w=0&k=20&c=wBkGduOttntNPw1_bSs7VhMEMfL6FlCYidnXF2IojHg=" alt="" class="img-descricao">
+                                <h2 class="tituloDiscricao">Ingredientes:</h2>
+                                <p>Farofa recheada, Spinafre, Carne de Frango e Yaksoba, opção de salada.</p>
+                            </div>
+                            <div class="cartaz-comida">
+                                <img src="https://media.istockphoto.com/id/1300336353/pt/foto/marmita-or-marmitex-meal-to-take-food-in-the-box.jpg?s=612x612&w=0&k=20&c=wBkGduOttntNPw1_bSs7VhMEMfL6FlCYidnXF2IojHg=" alt="" class="img-comida" id="img-comida">
+                            </div>
+                            <div class="textoComida">
+                                <p class="nomeComida">Quentinha do Oriente</p>
+                            </div>
+                        </div>
+                
+                        <button class="pedirComida"><div class="valor" id="valor">25.00</div></button>
+                    </div>
+
+                    <div class="comida">
+                        <div class="envolverCartaz">
+                            <div class="descricaoComida">
+                                <img src="https://www.vilaurbanagastronomia.com.br/wp-content/uploads/2021/12/side-view-double-cheeseburger-with-grilled-beef-patties-cheese-and-lettuce-leaf-between-burger-buns-1024x683.jpg" alt="" class="img-descricao">
+                                <h2 class="tituloDiscricao">Ingredientes:</h2>
+                                <p>Pão queimado, Dois Hambugueres,Alface, Tomate, Queijo Mussarela derretido.</p>
+                            </div>
+                            <div class="cartaz-comida">
+                                <img src="https://www.vilaurbanagastronomia.com.br/wp-content/uploads/2021/12/side-view-double-cheeseburger-with-grilled-beef-patties-cheese-and-lettuce-leaf-between-burger-buns-1024x683.jpg" alt="" class="img-comida" id="img-comida">
+                            </div>
+                            <div class="textoComida">
+                                <p class="nomeComida">Hambuguer Nebulosa</p>
+                            </div>
+                        </div>
+                
+                        <button class="pedirComida"><div class="valor" id="valor">10.00</div></button>
+                    </div>
+
+                    <div class="comida">
+                        <div class="envolverCartaz">
+                            <div class="descricaoComida">
+                                <img src="https://supermercadosrondon.com.br/guiadecarnes/images/postagens/quer_fazer_hamburger_artesanal_perfeito_2019-05-14.jpg" alt="" class="img-descricao">
+                                <h2 class="tituloDiscricao">Ingredientes:</h2>
+                                <p>Pão, Hambuguer 650g, Alface, Tomate, Queijo Mussarela, Bacon.</p>
+                            </div>
+                            <div class="cartaz-comida">
+                                <img src="https://supermercadosrondon.com.br/guiadecarnes/images/postagens/quer_fazer_hamburger_artesanal_perfeito_2019-05-14.jpg" alt="" class="img-comida" id="img-comida">
+                            </div>
+                            <div class="textoComida">
+                                <p class="nomeComida">Hambuguer Especial Bovino</p>
+                            </div>
+                        </div>
+                        <button class="pedirComida"><div class="valor" id="valor">10.00</div></button>
+                    </div>
+
+
+                    <div class="comida">
+                        <div class="envolverCartaz">
+                            <div class="descricaoComida">
+                                <img src="https://www.designi.com.br/images/preview/10896718.jpg" alt="" class="img-descricao">
+                                <h2 class="tituloDiscricao">Ingredientes:</h2>
+                                <p>Massa de Pizza, Queijo Ralado, Camarão, Catupiry, Molho de Tomate, Pimentão.</p>
+                            </div>
+                            <div class="cartaz-comida">
+                                <img src="https://www.designi.com.br/images/preview/10896718.jpg" alt="" class="img-comida" id="img-comida">
+                            </div>
+                            <div class="textoComida">
+                                <p class="nomeComida">Pizza Camarão com Catupiry</p>
+                            </div>
+                        </div>
+                
+                        <button class="pedirComida"><div class="valor" id="valor">55.00</div></button>
+                    </div>
+
+
+                    <div class="comida">
+                        <div class="envolverCartaz">
+                            <div class="descricaoComida">
+                                <img src="https://static.itdg.com.br/images/auto-auto/695e7cae035ad377dcfbb63fb7a4db19/receitas-com-camarao.jpg" alt="" class="img-descricao">
+                                <h2 class="tituloDiscricao">Ingredientes:</h2>
+                                <p>Camarão frito empanado com acompanhante de Molho Rose.</p>
+                            </div>
+                            <div class="cartaz-comida">
+                                <img src="https://static.itdg.com.br/images/auto-auto/695e7cae035ad377dcfbb63fb7a4db19/receitas-com-camarao.jpg" alt="" class="img-comida" id="img-comida">
+                            </div>
+                            <div class="textoComida">
+                                <p class="nomeComida">Camarão empanado</p>
+                            </div>
+                        </div>
+                
+                        <button class="pedirComida"><div class="valor" id="valor">20.00</div></button>
+                    </div>
+
+
+                    <div class="comida">
+                        <div class="envolverCartaz">
+                            <div class="descricaoComida">
+                                <img src="https://vocegastro.com.br/app/uploads/2021/07/coxinha-de-frango.jpg" alt="" class="img-descricao">
+                                <h2 class="tituloDiscricao">Ingredientes:</h2>
+                                <p>Coxinha, Opção de Frango, misto, Queijo e Carne, acompanhante de Ketshup.</p>
+                            </div>
+                            <div class="cartaz-comida">
+                                <img src="https://vocegastro.com.br/app/uploads/2021/07/coxinha-de-frango.jpg" alt="" class="img-comida" id="img-comida">
+                            </div>
+                            <div class="textoComida">
+                                <p class="nomeComida">Coxinha</p>
+                            </div>
+                        </div>
+                
+                        <button class="pedirComida"><div class="valor" id="valor">5.00</div></button>
+                    </div>
+
+                    <div class="comida">
+                        <div class="envolverCartaz">
+                            <div class="descricaoComida">
+                                <img src="https://blog.finamac.com/wp-content/uploads/2019/06/287027-conheca-aqui-x-dicas-para-inovar-no-sorvete-de-casquinha.jpg" alt="" class="img-descricao">
+                                <h2 class="tituloDiscricao">Ingredientes:</h2>
+                                <p>Cascinha, bolas de soverte de morango, baumilha, chocolate, flocos e misto.</p>
+                            </div>
+                            <div class="cartaz-comida">
+                                <img src="https://blog.finamac.com/wp-content/uploads/2019/06/287027-conheca-aqui-x-dicas-para-inovar-no-sorvete-de-casquinha.jpg" alt="" class="img-comida" id="img-comida">
+                            </div>
+                            <div class="textoComida">
+                                <p class="nomeComida">Casquinha</p>
+                            </div>
+                        </div>
+                
+                        <button class="pedirComida"><div class="valor" id="valor">5.00</div></button>
+                    </div>
+
+                    <div class="comida">
+                        <div class="envolverCartaz">
+                            <div class="descricaoComida">
+                                <img src="https://classic.exame.com/wp-content/uploads/2020/11/cerveja-gelada-e1598542702646-1.jpg?quality=70&strip=info&w=1024" alt="" class="img-descricao">
+                                <h2 class="tituloDiscricao">Ingredientes:</h2>
+                                <p>Garrafas de 750ml a 1L de Skol, Brahma, Antarctica, Itaipava, Devassa e Sol.</p>
+                            </div>
+                            <div class="cartaz-comida">
+                                <img src="https://classic.exame.com/wp-content/uploads/2020/11/cerveja-gelada-e1598542702646-1.jpg?quality=70&strip=info&w=1024" alt="" class="img-comida" id="img-comida">
+                            </div>
+                            <div class="textoComida">
+                                <p class="nomeComida">Cerveja</p>
+                            </div>
+                        </div>
+                
+                        <button class="pedirComida"><div class="valor" id="valor">3.00</div></button>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!--Final do conteúdo-->
+
+    <!--roda-pé-->
+    <div class="containerFooter">
+        <footer class="rodaPe">
+            <div class="logo">
+                <a href="../index.html"><img src="../imagens/logo-transparente.png" alt="" class="logo-img"></a>
+            </div>
+            <div class="conteudoRodape">
+                
+                <div class="tituloRodape">
+                    <p class="textoRodape">Importante</p>
+                    <div class="envolverLink-rodape">
+                        <a href="#" class="linkRodape">Início</a>
+                        <a href="#" class="linkRodape">Cardápio</a>
+                    </div>
+                    <div class="envolverLink-rodape">
+                        <a href="#" class="linkRodape">Sobre Nós</a>
+                        <a href="#" class="linkRodape">Suporte</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="redes-sociais">
+                <p class="textoRodape">Sociais</p>
+                    <div class="envolverSociais">
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+            </div>
+
+            <div class="direitos-de-criacao">Criado por Vagner e sua Equipe — 2023</div>
+        </footer>
+    </div>
+    <!--final do roda-pé-->
+
+
+    <!--Scripits-->
+
+    <script type="text/javascript" src="../js/jquery-3.6.4.min.js"></script>
+
+
+    <script src="../js/main.js"></script>
+    <script src="../js/cardapio.js"></script>
+    <!--xxxxxxxx-->
+</body>
+</html>
