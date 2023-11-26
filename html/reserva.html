@@ -72,8 +72,8 @@
         <section class="container-reserva">
             <h1 class="titulo-reserva">Faça a Sua reserva</h1>
 
-            <form class="reservation-form" action="">
-                <div class="container-tipo-reserva">
+            <!-- <form class="reservation-form" action=""> -->
+                <!-- <div class="container-tipo-reserva">
                     
                     <div class="reserva-normal check-input">
                         <input type="checkbox" name="" id="normal" class="normal">
@@ -148,7 +148,58 @@
                 <div class="container-info">
                     <p class="info"><i class="fa-solid fa-location-dot"></i>Local: ETE Jurandir Bezerra Lins - Encanto Igarassú, Igarassu - PE</p>
                     <p class="info"><i class="fa-solid fa-phone"></i>Contato: (81)900000000</p>
-                </div>
+                </div> -->
+
+               <!--  ----------------------------------------------------------------------  -->
+<!--  NOTA: Adicione o seguinte elemento <META> à sua página <HEAD>.  Se      -->
+<!--  necessário, modifique o parâmetro charset para especificar o conjunto   -->
+<!--  de caracteres de sua página HTML.                                       -->
+<!--  ----------------------------------------------------------------------  -->
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+    <!--  ----------------------------------------------------------------------  -->
+    <!--  NOTA: Adicione o elemento <FORM> a seguir à sua página.                 -->
+    <!--  ----------------------------------------------------------------------  -->
+    
+    <form  class="reservation-form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DHs000002m5ZZ" method="POST">
+    
+    <input type=hidden name="oid" value="00DHs000002m5ZZ">
+    <input type=hidden name="retURL" value="https://dylsonc.github.io/Narnia1/html/reserva.html">
+    
+    <!--  ----------------------------------------------------------------------  -->
+    <!--  NOTA: Estes campos são elementos de depuração opcionais. Remova o       -->
+    <!--  comentário dessas linhas se quiser testar no modo de depuração.         -->
+    <!--  <input type="hidden" name="debug" value=1>                              -->
+    <!--  <input type="hidden" name="debugEmail"                                  -->
+    <!--  value="vagnersilva2744@gmail.com">                                      -->
+    <!--  ----------------------------------------------------------------------  -->
+    
+    <div class="nome-email-telefone">
+    <label for="first_name">Primeiro Nome</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+    
+    <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+    
+    <label for="phone">Telefone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+    </div>
+    <div class="data-hora-pessoas">
+    Data:<span class="dateInput dateOnlyInput"><input  id="00NHs00000VyO6X" name="00NHs00000VyO6X" size="12" type="text" /></span><br>
+    
+    Horário:<span class="timeContainer"><input  id="00NHs00000VyO6c" name="00NHs00000VyO6c" placeholder="HH:MM" size="12" type="text" /></span><br>
+    
+    Número de pessoas:<input  id="00NHs00000VyO6h" name="00NHs00000VyO6h" size="20" type="text" /><br>
+    </div>
+    <div class="campo-de-texto">
+
+    <div class="campo-de-texto">
+       
+    <!-- Observações:<input  id="00NHs00000VyO6m" maxlength="200" name="00NHs00000VyO6m" size="20" type="text" / class="textarea" ><br> -->
+        </div>
+    </div>
+    <div class="textarea">
+    <div class="btn-wrapper"><input type="submit" value="Enviar Reserva" class="btn-reserva">
+    </div>
+    </form>
                 <div class="local">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.405179601259!2d-34.911183125660344!3d-7.852593378043675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab14d50f29c135%3A0xb7c10c823a37123b!2sEscola%20T%C3%A9cnica%20Estadual%20Jurandir%20Bezerra%20Lins!5e0!3m2!1spt-PT!2sbr!4v1687208133853!5m2!1spt-PT!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
